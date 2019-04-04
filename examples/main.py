@@ -1,8 +1,9 @@
-# Write your code here :-)
 from microbit import *
-import SW10
+from SW10 import SW10
+
+SW10 = SW10()
 
 while True:
     temp = SW10.readTempC()
     display.scroll(temp)
-    sleep(2000)
+    sleep(1000)
