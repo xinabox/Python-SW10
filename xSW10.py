@@ -11,7 +11,7 @@ class xSW10:
     def init(self):
         pass
 
-    def getTempC(self):
+    def readTempC(self):
         data = self.i2c.write_read(self.addr, LM75B_REG_TEMP, 2)
         tempC = (data[0] * 256 + data[1])/32 * 0.125
         return tempC
