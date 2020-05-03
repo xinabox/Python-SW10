@@ -3,6 +3,7 @@ from xCore import xCore
 LM75B_I2C_ADDR = 0x48
 LM75B_REG_TEMP = 0x00
 
+
 class xSW10:
     def __init__(self, addr=LM75B_I2C_ADDR):
         self.addr = addr
