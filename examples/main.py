@@ -4,6 +4,6 @@ from xCore import xCore
 SW10 = xSW10()
 
 while True:
-    temp = SW10.readTempC()
+    temp = SW10.readTempCd()
     print(temp)
     xCore.sleep(1000)
